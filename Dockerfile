@@ -1,4 +1,5 @@
 FROM jrpackages/jrnotes
+ARG jr_pkg=jrDocker
 
 RUN apt-get update && apt-get install -y \
     python-pip python-dev \
@@ -22,5 +23,6 @@ RUN curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID"
    apt-get -y install docker-ce && apt-get clean && \
    rm -rf /var/lib/apt/lists/*
 
-RUN install2.r -n -1 -d TRUE -l /rpackages/ --error jrDocker \
+RUN install2.r -n -1 -d TRUE -l /rpackages/ --error $jr_pkg \
     && rm -rf /tmp/downloaded_packages/
+

@@ -22,4 +22,5 @@ RUN curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID"
    apt-get -y install docker-ce && apt-get clean && \
    rm -rf /var/lib/apt/lists/*
 
-RUN install2.r -l /rpackages/ --error jrDocker && rm -rf /tmp/downloaded_packages/
+RUN install2.r -n -1 -d TRUE -l /rpackages/ --error jrDocker \
+    && rm -rf /tmp/downloaded_packages/

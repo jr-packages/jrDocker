@@ -1,11 +1,17 @@
-Package: jrDocker
 Type: Package
+Package: jrDocker
 Title: Docker with R
 Version: 0.1.0
-Authors@R: person("Colin", "Gillespie", email="colin@jumpingrivers.com", role = c("cre", "aut"))
+Authors@R: 
+    person(given = "Colin",
+           family = "Gillespie",
+           role = c("cre", "aut"),
+           email = "colin@jumpingrivers.com")
 Description: A stub package.
 License: GPL-3
-Suggests: testthat, lintr
+Suggests: 
+    lintr,
+    testthat
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1

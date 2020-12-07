@@ -1,7 +1,7 @@
 Type: Package
 Package: jrDocker
-Title: Docker with R
-Version: 0.1.0
+Title: Jumping Rivers: Getting started with Docker
+Version: 0.1.1
 Authors@R: 
     person(given = "Colin",
            family = "Gillespie",
